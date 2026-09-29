@@ -1,0 +1,35 @@
+---
+import '../styles/global.css';
+import { Calculator } from '../components/Calculator';
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Calculadora de Impressão 3D | Precificação e Orçamento em PDF</title>
+    <meta
+      name="description"
+      content="Calculadora completa e profissional para precificação precisa de serviços de Impressão 3D (Bambu Lab, Creality, Elegoo) com gerador automático de orçamentos em PDF para clientes."
+    />
+    <meta name="author" content="Calculadora 3D" />
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="Calculadora de Impressão 3D & Gerador de Orçamentos" />
+    <meta property="og:description" content="Calcule custos de filamento, energia, depreciação, mão de obra, margens e gere orçamentos em PDF profissionais instantaneamente." />
+    <meta property="og:type" content="website" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-100 min-h-screen text-slate-800 antialiased selection:bg-emerald-500 selection:text-white">
+    {/* React Calculator with client:load for real-time reactivity */}
+    <Calculator client:load />
+  </body>
+</html>
